@@ -1,0 +1,19 @@
+.toy-details {
+  min-height: 88vh;
+  padding: 0.9rem;
+  text-align: center;
+  .detail {
+    margin-top: 10vh;
+    span {
+      text-decoration: underline;
+    }
+  }
+  .nav {
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+    width: 90vw;
+    margin: 1rem;
+    justify-content: space-between;
+  }
+}

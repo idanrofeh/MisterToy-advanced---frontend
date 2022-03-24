@@ -1,0 +1,44 @@
+/* MAIN */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(252, 251, 250);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+  text-decoration: none;
+  color: black;
+  background-color: blanchedalmond;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+/* PAGES */
+@import "pages/toy-app.scss";
+@import "pages/about.scss";
+@import "pages/toy-details.scss";
+@import "pages/toy-edit.scss";
+
+/* CMPS */
+@import "cmps/toy-list.scss";
+@import "cmps/toy-preview.scss";
+@import "cmps/app-header.scss";
+@import "cmps/toy-filter.scss";
+
+/* HELPERS */
+@import "helpers.scss";

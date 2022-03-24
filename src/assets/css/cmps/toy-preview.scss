@@ -1,0 +1,17 @@
+.toy-preview {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 0.7rem;
+  border-radius: 0.5rem;
+  border-color: rgb(255, 255, 96);
+  border-width: 0.125rem;
+  border-style: solid;
+  background-color: white;
+  .price {
+    font-weight: 450;
+  }
+}
