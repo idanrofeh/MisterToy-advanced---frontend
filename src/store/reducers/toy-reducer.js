@@ -5,7 +5,8 @@ const initialState = {
         inStock: 'all',
         labels: []
     },
-    sortBy: 'createdAt'
+    sortBy: 'createdAt',
+    user: null
 }
 
 export function toyReducer(state = initialState, action) {

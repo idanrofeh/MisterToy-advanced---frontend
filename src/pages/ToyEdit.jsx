@@ -27,7 +27,7 @@ function _ToyEdit({ toys, loadToys }) {
 
   useEffect(() => {
     if (!toys.length) loadToys();
-  });
+  }, []);
 
   useEffect(() => {
     let toyToSet;
