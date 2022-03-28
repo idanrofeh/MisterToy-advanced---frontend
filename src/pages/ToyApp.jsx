@@ -18,8 +18,6 @@ function _ToyApp({ loadToys, toys, cleanFilter }) {
   return (
     <section className="toy-app">
       <ToyFilter />
-      {/* {Boolean(toys?.length) && <ToyList toys={toys} />}
-      {Boolean(!toys?.length) && <span>No toys to show</span>} */}
       {toys?.length ? <ToyList toys={toys} /> : <span>No toys to show</span>}
       <NavLink className="btn" to="/edit">
         Add Toy

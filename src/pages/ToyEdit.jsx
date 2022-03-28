@@ -42,7 +42,8 @@ function _ToyEdit({ toys, loadToys }) {
     navigate("/");
   };
 
-  const onSaveToy = (toy) => {
+  const onSaveToy = (ev, toy) => {
+    ev.preventDefault();
     toyService.saveToy(toy);
     navigate("/");
   };
@@ -71,7 +72,7 @@ function _ToyEdit({ toys, loadToys }) {
 
   return (
     <section className="toy-edit">
-      <form className="edit-form" onSubmit={() => onSaveToy(toy)}>
+      <form className="edit-form" onSubmit={(ev) => onSaveToy(ev, toy)}>
         <div className="name detail">
           <span>Name</span>:
           <input

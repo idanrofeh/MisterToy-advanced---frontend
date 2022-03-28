@@ -25,7 +25,7 @@ async function query(filterBy) {
 }
 
 async function removeToy(toyId) {
-    try { await axios.delete(BASE_API + "/" + toyId); } catch (err) {
+    try { await axios.delete(BASE_API + "/" + toyId) } catch (err) {
         console.log("cannot remove toy", err);
     }
 }
@@ -43,7 +43,7 @@ async function _addToy(toy) {
 
 async function _updateToy(toy) {
     try {
-        await axios.put(BASE_API + "/" + toy._id, toy);
+        await axios.put(BASE_API, toy);
     } catch (err) {
         console.log("cannot update toy", err);
     }
